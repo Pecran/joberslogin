@@ -1,0 +1,60 @@
+<html>
+<head>
+    
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="login.js"></script>
+    <!-- Title -->
+    <title>JobersTool</title>
+    
+</head>
+
+<body>
+    <div class="appcontainer">
+        <header>  </header>
+
+
+        <main class="main-box" role="main">
+            <div class="header__content">
+                <h1 id="titre">Jobers<span class="vert">.</span></h1>
+                <h2>Connexion à votre compte</h2>
+                <div class="supptxt">Bienvenue, veuillez s'il vous plaît rentrer vos <br> informations de connexion</p></div>
+                
+            </div> 
+            <form action="espace.html" method="GET" onsubmit = "return validate()" class="login__form">
+                <div class="form_input-1">
+                    
+                    <label for="username" class="form__label"><h3>E-mail</h3></label>
+                    <input type="text" class="input" id="username" onfocus="this.value=''" value="" aria-label="E-mail" required>
+                    <label for="password" class="form__label"  aria-hidden="true"><h3>Mot de passe</h3></label>
+                    <input type="password" class="input" id="password" onfocus="this.value=''" value="" type="password" required>
+
+                    <!-- <span class="button_password-visibility" tabindex="0">afficher</span> -->
+                </div>
+                <div class="login-option">
+
+                   <div class="remember">
+                    <input type="checkbox" name="" class="remember_me" class="checkbox">
+                    <label for="" class="remember_me-buttn"><h3>Se souvenir de moi</h3></label>
+                   </div>
+                    <a href="mdp.html" class="button_forgot-passwd"><h3>Mot de passse oublié?</h3></a>
+                </div>
+                
+                <input class="connection-bttn"  type="submit" value="Connexion" />
+            </form>
+            
+                   
+            <p>Pas encore de compte ?</p> <a href="signup.html">S'inscrire</a>
+        </main>
+    </div>
+    
+</div>
+
+
+
+
+<script type="module" src="src/index.ts"></script>
+
+</body>
+</html>

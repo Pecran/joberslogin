@@ -1,0 +1,373 @@
+
+
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+
+html, body {
+    
+    margin: 0;
+    height: 100%;
+}
+
+.appcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* border: medium solid red;*/
+    font-family: 'Inter';
+  
+
+}
+
+.main-box {
+    
+    /*auto-layout*/
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px;    
+    /*base white*/
+    background-color: rgb(255, 255, 255);
+
+    /*Shadow/Box*/
+
+    border-radius: 16px;
+    box-shadow:0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06); ;
+}
+
+
+
+h1{
+    text-align: center;
+    font-family: inherit;
+    /*font-style: ;*/
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #234E53;
+
+    /*inside auto layout*/
+    flex: none;
+    order:0;
+    flex-grow: 0 ;
+    margin: 24px 0px;
+}
+
+span.vert {color:#3ac85d;}
+
+h2{
+    /* Text */
+flex: none;
+position: static;
+
+
+/* Display xs/Semibold */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+
+/* identical to box height, or 133% */
+text-align: center;
+
+/* Gray/900 */
+color: #101828;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 12px 0px;
+}
+
+.supptxt{
+    /* Supporting text */
+
+position: static;
+width: 358px;
+height: 48px;
+left: 0px;
+top: 44px;
+
+/* Text md/Normal */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* or 150% */
+text-align: center;
+
+/* Gray/500 */
+color: #667085;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: 12px 0px;
+}
+ 
+h3{
+    /* Text md/Normal */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+
+
+/* or 150% */
+
+
+/* Gray/500 */
+color: #44474e;
+
+
+/* Inside auto layout */
+
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 12px 0px 5px 0px;
+}
+
+h4{
+
+    text-decoration: none;
+    color:#101828;
+}
+/*---------------------------*/
+/*Links*/
+/*---------------------------*/
+
+a{
+    text-decoration: none;
+}
+
+/*------------------------------
+/*choix catégorie des inscriptions
+----------------------------------*/
+.signup_category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.signup_choices{
+    display: flex;
+    flex-direction: row;
+    /*border-color: red;
+    border-style: solid;*/
+    gap:12px;
+}
+
+/*category icones*/
+
+.signup_choices--objects {
+
+    background-color: #FFFFFF;
+    font-size: large;
+    color: #234E53;
+    border-radius: 8px;
+    text-align: center;
+    
+
+    /*display*/
+   
+    text-decoration: none;
+    width: 174px;
+    height: 178px;
+    padding:32px;
+
+    /* Shadow/sm */
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 16px;
+}
+
+.signup_choices--objects:hover>h3{
+    color: #FFFFFF;
+
+}
+
+
+.signup_choices--objects:hover{
+    background-color: #234E53;
+    color: #FFFFFF;
+}
+
+/*-------------------------*/
+/*formulaires d'inscription*/
+/*-------------------------*/
+
+.login__form{
+    width: 100%;
+    
+}
+
+.form_input-1{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input{
+    cursor: pointer;
+   
+    max-width: 100%;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    
+    padding: 10px;     
+}
+
+.previous-bttn, .next-bttn{
+    background-color: #234E53;
+height: 30px;
+}
+
+
+
+.remember_me{
+    display: block;
+}
+
+/*-------------------------*/
+/*----------connection-----*/
+/*-------------------------*/
+
+.connection-bttn{
+background-color: #234E53;
+height: 44px;
+width: 100%;
+border: none;
+border-radius: 8px;
+margin-top: 14px;
+font-family: inherit;
+font-size: 16px ;
+color: #FFFFFF;
+
+
+}
+
+.remember{
+    display: flex;
+}
+
+.login-option{
+    display: flex;
+    justify-content: space-between;
+}
+/*---------------------------*/
+
+.form__label{
+   display: block;
+
+}
+
+.sign-up__box{
+    display: flex;
+    border: medium solid green;
+    justify-content: center;
+    flex-direction: column;
+    width: 416px;
+}
+
+/*.sign-up__form{
+    ;
+}*/
+
+.su_info{
+    border: medium solid blue;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*---------------------------*/
+/*--------Sidebar------------*/
+/*---------------------------*/
+
+
+.sidebar{
+    
+    background-color: #234E53;
+    padding-left: 5px;
+    max-width: 280px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+/*input:invalid
+{
+  border: 2px solid pink;
+}
+
+/*.sidebar>h1{
+     
+    color: #FFFFFF;
+    margin-top: 0px;
+    text-align: justify;
+    margin-top: 30px;
+}
+*/
+
+li>h3{
+    color: #FFFFFF;
+}
+
+.nav{
+    margin: 0px;
+    display: inline-block;
+    
+    
+}
+
+ul,li{
+    
+    list-style-type: none;
+    padding: 0px;
+    
+    
+    border-radius: 8px;
+    border:medium solid black;
+    
+}
+
+li:last-of-type{
+    margin-top: auto;
+}
+
+
+
+
+li:hover{
+    color:#234E53;
+    background-color: #FFFFFF;
+    
+}
+
+li:hover>h3{
+    color:#234E53 ;
+}
+
+.user{
+    border: medium solid red;
+    margin-top: auto;
+   
+}
